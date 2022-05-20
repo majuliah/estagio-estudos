@@ -66,12 +66,6 @@ namespace TestandoCodigos
 
 
             WriteLine("O valor é: " + testandoAsClasses + " Agora convertido é: " + testandoAsClasses.TotalMinutes);
-
-
-            
-        
-        
-        
         }
     } 
 }
