@@ -51,7 +51,24 @@ namespace TestandoCodigos
             var ResultadoConversao = testandoAcima.TotalMinutes;
 
             WriteLine("Os minutos devem ser 495, eles são: " + ResultadoConversao);
-        
+
+            Teste testandoComClasses = new Teste("08:15", "Maraju", 22);
+
+            TimeSpan testandoAsClasses = new TimeSpan(
+                int.Parse(
+                    testandoComClasses.Valor.Remove(2)
+                ), int.Parse(
+                    testandoComClasses.Valor.Remove(0, 3)
+                ), 00
+            );
+
+            WriteLine("Testando aqui: " + testandoComClasses.Valor);
+
+
+            WriteLine("O valor é: " + testandoAsClasses + " Agora convertido é: " + testandoAsClasses.TotalMinutes);
+
+
+            
         
         
         
