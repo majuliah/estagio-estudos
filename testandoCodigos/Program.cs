@@ -63,9 +63,30 @@ namespace TestandoCodigos
             );
 
             WriteLine("Testando aqui: " + testandoComClasses.Valor);
-
-
             WriteLine("O valor é: " + testandoAsClasses + " Agora convertido é: " + testandoAsClasses.TotalMinutes);
+
+
+            TimeSpan horaQualquer = new TimeSpan(09, 10, 00);
+            var calculaHoraRestante = testandoAsClasses - horaQualquer;
+            WriteLine("O resultado é: " + calculaHoraRestante);
+            
+            TimeSpan calculandoTudo = testandoAsClasses - horaQualquer;
+            WriteLine("Agora com tipo timestamp: " + calculandoTudo);
+
+            TimeSpan var1 = new TimeSpan(10, 10, 10);
+            var totalMinutoVar1 = var1.TotalMinutes;
+            TimeSpan var2 = new TimeSpan(12, 12, 12);
+            var totalMinutoVar2 = var2.TotalMinutes;
+
+            var difEntreVar1eVar2 = totalMinutoVar1 - totalMinutoVar2;
+            WriteLine("A diferença entre as duas horas em minutos será: " + difEntreVar1eVar2);
+
+            TimeSpan testeDeHoras = new TimeSpan(600, 200, 300);
+            WriteLine("Dias em 600h, 200min e 300seg: " + testeDeHoras.TotalDays);
+            WriteLine("Horas em em 600h, 200min e 300seg: " + testeDeHoras.TotalHours);
+            WriteLine("Minutos em em 600h, 200min e 300seg: " + testeDeHoras.TotalMinutes);
+            WriteLine("Milissegundos em em 600h, 200min e 300seg: " + testeDeHoras.TotalMilliseconds);
+        
         }
     } 
 }
