@@ -90,12 +90,10 @@ namespace TestandoCodigos
             TimeSpan horaDiaria = new TimeSpan(08, 15, 00);
             WriteLine("Hora limite diária: " + horaDiaria.TotalMinutes);
 
+            // não dá certo as 2 linhas a seguir
             var horaLimiteDiaria = new TimeSpan(08, 15, 00).TotalMinutes;
             WriteLine("Hora Limite tentando converter: " + horaLimiteDiaria.TotalMinutes);
-            
 
-
-        
         }
     } 
 }
