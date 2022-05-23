@@ -86,6 +86,15 @@ namespace TestandoCodigos
             WriteLine("Horas em em 600h, 200min e 300seg: " + testeDeHoras.TotalHours);
             WriteLine("Minutos em em 600h, 200min e 300seg: " + testeDeHoras.TotalMinutes);
             WriteLine("Milissegundos em em 600h, 200min e 300seg: " + testeDeHoras.TotalMilliseconds);
+
+            TimeSpan horaDiaria = new TimeSpan(08, 15, 00);
+            WriteLine("Hora limite diária: " + horaDiaria.TotalMinutes);
+
+            var horaLimiteDiaria = new TimeSpan(08, 15, 00).TotalMinutes;
+            WriteLine("Hora Limite tentando converter: " + horaLimiteDiaria.TotalMinutes);
+            
+
+
         
         }
     } 

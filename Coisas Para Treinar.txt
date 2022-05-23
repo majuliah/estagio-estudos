@@ -1,0 +1,8 @@
+
+ - Criar uma validação:
+	* Verificar se a hora que o usuário está entrando é menor ou igual ao valor de expediente;
+	* Verificar se a hora já foi criada, caso atinja o valor limite
+	* Verificar quantas horas ele tem disponível no banco. Caso a soma de todas as horas cadastradas forem
+		menor ou igual ao horário de expediente, permite o cadastro, o contrário não permite.
+	
+	** Para todas as verificações, retornar uma mensagem de erro ou de aceite.
