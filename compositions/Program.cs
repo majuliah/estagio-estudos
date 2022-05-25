@@ -21,8 +21,8 @@ namespace Compositions
             double baseSalary = double.Parse(ReadLine());
 
 
-            Departament dpt = new Departament(departamentoName);
-            Worker worker = new Worker(nameFuncionario, Level, data, baseSalary);
+            //Departament dpt = new Departament(departamentoName);
+            //Worker worker = new Worker(nameFuncionario, Level, data, baseSalary);
 
         }
     }
