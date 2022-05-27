@@ -1,4 +1,29 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static System.Console;
 
-Console.WriteLine(A-Z 0-9, A-Q 0-9 && S-Z 0-9, A-K0-9 && L-Z0-9,);
+namespace TestandoExpressoes
+{
+    public class Program
+    {
+         public static void Main(string[] args)
+        {
+            
+            string nome = "Majulia";
+            string nome1 = nome.ToUpper();
+
+            bool comeca = !nome1.StartsWith("Ma");
+
+            WriteLine(comeca);
+            comeca = nome1.StartsWith("MA");
+
+            WriteLine(comeca);
+            comeca = nome1.StartsWith("Ju");
+
+            WriteLine(comeca);
+            comeca = nome1.StartsWith("ju");
+
+            WriteLine(comeca);
+            comeca = nome1.StartsWith("PRJ");
+        }
+        
+    }
+}
